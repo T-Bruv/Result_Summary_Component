@@ -1,0 +1,179 @@
+/* Importing a font from Google Fonts. */
+@import url('https://fonts.google.com/specimen/Hanken+Grotesk');
+/* Universal reset for margins, padding, and box-sizing. */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Define custom CSS variables for colors. */
+:root {
+    --White: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --grayish-blue: hsl(241, 100%, 89%);
+    --dark-blue: hsl(224, 30%, 27%);
+}
+/* Styling for the main container with class 'container'. */
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Styling for the wrapper. */
+.wrapper {
+    width: 700px;
+    height: 500px;
+    display: flex;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 23px -10px rgba(66, 60, 50, 0.5);
+}
+/* Styling for the left-side section. */
+.left-side {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    border-radius: 30px;
+    color: hsl(241, 100%, 89%);
+}
+/* Styling for the result display. */
+.result {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    margin: 10px;
+}
+/* Styling for the result score. */
+.result span {
+    font-size: 40px;
+    color: white;
+    font-weight: 300;
+}
+/* Styling for the heading inside the left-content. */
+h2 {
+    margin-bottom: -5px;
+    color: white;
+}
+/* Styling for paragraphs. */
+p {
+    text-align: center;
+    width: 250px;
+    margin-top: 20px;
+}
+/* Styling for headings. */
+h3 {
+    font-weight: 600;
+}
+/* Styling for the right-side section. */
+.right-side {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    color: hsl(224, 30%, 27%);
+}
+/* Styling for the summary sections. */
+.summary {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(223, 100%, 90%);
+    border-radius: 10px;
+    padding: 14px;
+    width: 150%;
+    margin-top: 28px;
+    font-weight: 500;
+    color: hsla(224, 30%, 27%, 0.5);
+}
+/* Styling for the score. */
+.score {
+    font-weight: 700;
+}
+/* Styling for the score value. */
+.score span {
+    color: hsl(224, 30%, 27%);
+}
+/* Styling for the icons in the summary sections. */
+.summary img {
+    margin: -6px;
+    margin-right: 10px;
+}
+/* Additional styling for specific summary sections. */
+.summary:nth-of-type(1) {
+    background-color: hsl(0, 100%, 67%, .09);
+}
+.summary:nth-of-type(2) {
+    background-color: hsl(39, 100%, 56%, .09);
+}
+.summary:nth-of-type(3) {
+    background-color: hsl(166, 100%, 37%, .09);
+}
+.summary:nth-of-type(4) {
+    background-color: hsl(234, 85%, 45%, .09);
+}
+/* Styling for sections inside summary sections. */
+.summary :nth-of-type(1) section {
+    color: hsl(0, 100%, 67%);
+}
+.summary :nth-of-type(2) section {
+    color: transparent;
+}
+.summary :nth-of-type(3) section {
+    color: transparent;
+}
+.summary :nth-of-type(4) section {
+    color: transparent;
+}
+/* Styling for buttons. */
+button {
+    border: none;
+    background: hsl(224, 30%, 27%);
+    padding: 17px;
+    width: 150%;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 40px;
+    color: hsl(0, 0%, 100%);
+    margin-top: 30px;
+}
+/* Media query for screens with a maximum width of 760px. */
+@media(max-width: 760px) {
+    .left-side {
+        width: 100%;
+        border-radius: 6px;
+        padding: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .left-side p, h2 {
+        padding: 20px;
+        text-align: center;
+    }
+    .right-side {
+        padding: 0;
+        width: 80%;
+    }
+    .summary {
+        text-align: center;
+        max-width: 100%;
+    }
+    button {
+        max-width: 100%;
+    }
+    .wrapper {
+        width: 95%;
+        margin-top: 200px;
+        height: 130vh;
+        flex-direction: column;
+        border-radius: 0px;
+        overflow: hidden;
+        padding: 0px;
+    }
+}

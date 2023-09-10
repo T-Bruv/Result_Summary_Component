@@ -1,0 +1,57 @@
+<!-- The DOCTYPE declaration defines the document type and version of HTML being used. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set the character encoding for the document to UTF-8. -->
+    <meta charset="UTF-8">
+    <!-- Define the viewport settings for responsive web design. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the webpage displayed in the browser tab. -->
+    <title>Frontend Mentor | Result-summary-component</title>
+    <!-- Link to an external CSS file for styling. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <!-- Create a container with the class 'wrapper'. -->
+    <div class="wrapper">
+        <!-- Create a left-side section. -->
+        <div class="left-side">
+            <!-- Display a heading. -->
+            <h3>Your Result</h3>
+            <!-- Create a result display with a score. -->
+            <div class="result">
+                <span>76</span> of 100
+            </div>
+            <!-- Display a result description. -->
+            <h2>Great</h2>
+            <p>You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+        <!-- Create a right-side section. -->
+        <div class="right-side">
+            <!-- Display a heading. -->
+            <h3>Summary</h3>
+            <!-- Create a summary section for different categories. -->
+            <div class="summary">
+                <!-- Display an icon for the category. -->
+                <div class="section"><img src="images/icon-reaction.svg">Reaction</div>
+                <!-- Display the score for the category. -->
+                <div class="score"><span>80</span> /100</div>
+            </div>
+            <div class="summary">
+                <div class="section"><img src="images/icon-memory.svg">Memory</div>
+                <div class="score"><span>92</span> /100</div>
+            </div>
+            <div class="summary">
+                <div class="section"><img src="images/icon-verbal.svg">Verbal</div>
+                <div class="score"><span>61</span> /100</div>
+            </div>
+            <div class="summary">
+                <div class="section"><img src="images/icon-visual.svg">Visual</div>
+                <div class="score"><span>72</span> /100</div>
+            </div>
+            <!-- Create a button for further action. -->
+            <button>Continue</button>
+        </div>
+    </div> 
+</body>
+</html>
